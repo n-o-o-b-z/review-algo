@@ -1,5 +1,11 @@
 <?php
 
+$arr = array(5, 2, 8, 3, 1);
+
+$sortedArr = insertionSort($arr);
+
+echo implode(", ", $sortedArr); 
+
 function insertionSort($arr) {
     $n = count($arr);
     for ($i = 1; $i < $n; $i++) {
